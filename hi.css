@@ -1,0 +1,182 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: #092129 url(stars1.png);
+    padding: 0;
+    background-size: contain;
+    animation: anima 15s linear infinite;
+}
+
+@keyframes anima {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+.one {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.three {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 0 0 4px whitesmoke;
+
+}
+
+.three:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #092129 ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.three:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -325px;
+    height: 100%;
+    width: 400px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0)100%);
+    transform-origin: right;
+    transform: rotate(-45deg);
+    z-index: -2;
+}
+
+.four {
+    position: absolute;
+    width: 305px;
+    height: 105px;
+    background: whitesmoke;
+    border-radius: 50px;
+    top: -100px;
+    left: -300px;
+}
+
+.four span {
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: block;
+}
+
+.four span:nth-child(1) {
+    top: -50px;
+    left: 30px;
+}
+
+.four span:nth-child(2) {
+    top: -30px;
+    left: 140px;
+}
+
+.four span:nth-child(3) {
+    top: -80px;
+    left: 80px;
+}
+
+.four:after {
+    content: "";
+    top: -105px;
+    left: -370px;
+    width: 560px;
+    height: 240px;
+    position: absolute;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0)100%);
+    transform-origin: right;
+    transform: rotate(-45deg);
+    z-index: -2;
+}
+
+.five {
+    top: 150px;
+    left: 200px;
+
+}
+
+h1 {
+    font-size: 4.5em;
+    color: whitesmoke;
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    font-family: "satisfy", cursive;
+
+}
+
+/* .six {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: wheat;
+    box-shadow: 0 0 5px ivory;
+    top: 10px;
+    left: 10px;
+    animation: animi 8s linear infinite;
+}
+
+@keyframes animi {
+    0% {
+        background-color: rgb(243, 209, 145);
+        box-shadow: 0 0 10px wheat;
+
+    }
+
+    25% {
+        background-color: white;
+        box-shadow: 0 0 10px wheat;
+    }
+
+    50% {
+        background-color: white;
+        box-shadow: 0 0 10px wheat;
+    }
+
+    70% {
+        background-color: white;
+        box-shadow: 0 0 12px wheat;
+    }
+
+
+    75% {
+        background-color: white;
+        box-shadow: 0 0 0 wheat;
+    }
+
+    85% {
+        background-color: white;
+        box-shadow: 0 0 12px wheat;
+    }
+
+
+    100% {
+        background-color: rgb(241, 210, 151);
+        box-shadow: 0 0 10px wheat;
+    }
+
+} */
